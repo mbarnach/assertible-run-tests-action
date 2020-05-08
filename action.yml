@@ -11,10 +11,7 @@ inputs:
     description: 'The environment to use on Assertible to run your Web Service.'
     required: false
     default: 'production'
-  EnvironmentURL:
-    description: 'Run the tests against a specific URL: transient environment.'
-    required: false
-  Version:
+  version:
     description: 'A unique textual representation of the version.'
     required: true
     default: 'v1'
@@ -28,5 +25,4 @@ runs:
     - ${{ inputs.APIToken }}
     - ${{ inputs.ServiceID }}
     - ${{ inputs.Environment }}
-    - ${{ inputs.EnvironmentURL }}
     - ${{ inputs.Version }}
